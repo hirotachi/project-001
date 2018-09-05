@@ -186,7 +186,8 @@ a.social:hover {
   }
 
   header .profile-image:hover{
-    transform: scale(1.2) rotate(360deg);
+    border-radius: 10px;
+    transform: none;
   }
 
   .nav {
