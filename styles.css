@@ -32,8 +32,8 @@ a:hover {
   text-align: center;
 }
 .nav {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
@@ -60,7 +60,7 @@ header {
   background: url('images/photo-1533106497176-45ae19e68ba2.jpg') no-repeat center ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 header {
   line-height: 1.5;
@@ -76,7 +76,7 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
-.tag {
+.tag, .experience {
   background-color: #efefef;
   color: black;
   padding: 10px;
@@ -88,7 +88,7 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.card {
+.card, .col {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -167,6 +167,7 @@ a.social:hover {
   clear: both;
 }
 
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -181,11 +182,18 @@ a.social:hover {
 
   header {
     min-height: 470px;
+    padding-top: 60px;
+  }
+
+  header .profile-image:hover{
+    transform: scale(1.2) rotate(360deg);
   }
 
   .nav {
     max-width: 1200px;
     padding: 0 30px;
+    display: flex;
+    justify-content: space-around;
   }
 
 
